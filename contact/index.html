@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to Dusty Neubauer's Portfolio Homepage</title>
+    <link rel="stylesheet" href=../css/style.css>
+</head>
+<body>
+<nav class="row">
+    <a href="index.html"><img id="logo" src="../images/logo-header.png"
+		alt="logo"></a>
+    <ul id="nav-nav">
+        <li><a id="home" href="../index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="../portfolio/index.html">Portfolio</a></li>
+        <li><a href="index.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+<h1>Please Fill Out the Form Below</h1>
+<p>If you are interested in more information or would like to request an interview or my resume please fill out the contact form below.</p>
+<form id="contact-form" action="https://webdevbasics.net/scripts/demo.php" method="post">
+    <table>
+        <tr>
+            <th><label>First Name:</label></th>
+            <td><input type="text" name="first" required="required"></td>
+        </tr>
+        <tr>
+            <th><label>Last Name:</label></th>
+            <td><input type="text" name="last" required="required"></td>
+        </tr>
+        <tr>
+            <th><label>Email Address:</label></th>
+            <td><input type="email" name="email" required="required"></td>
+        </tr>
+        <tr>
+            <th><label>Phone Number:</label></th>
+            <td><input type="text" name="phone" required="required"></td>
+        </tr>
+        <tr>
+            <th><label>Preferred Method of Communication:</label></th>
+            <td>
+               <select name="communication" required="required">
+               <option value="">Please Choose a Communication Method</option>
+               <option value="phone">Phone</option>
+               <option value="text">Text</option>
+               <option value="email">Email</option>
+               </select></td>
+        </tr>
+        <tr>
+            <th><label for="interview">Likelihood to request an interview:</label></th>
+            <td><input type="range" name="invertview" min="1" max="5" required="required"></td>
+        </tr>
+        <tr>
+            <th><label for="resume">Would you like to recieve a copy of my resume?</label></th>
+            <td><label for="yes">Yes:</label><input type="radio" id="yes" name="resume" value="yes" required="required"><label for="no">No:</label><input type="radio" id="no" name="resume" value="no" required="required"></td>
+        </tr>
+        <tr>
+            <td id="button" colspan="2"><input type="reset"><input type="submit"></td> 
+        </tr>
+    </table>
+
+</form>
+
+</main>
+<footer>
+    <div id="social">
+        <ul id="social-gallery">
+            <a href="https://www.facebook.com/dusty.neubauer"><li><img src="../images/facebook.png"></li></a>
+            <a href="https://twitter.com/dustyneubauer"><li><img id="twitter" src="../images/twitter.png"></li></a>
+            <a href="https://instagram.com/dustyneubauer"><li><img src="../images/instagram.png"></li></a>
+
+        </ul>
+    </div>
+    <div id="copyright">
+        <span>Copyright &copy; 2022 - Dustin Neubauer</span>
+    </div>
+</footer>
+</body>
+</html>
