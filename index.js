@@ -2,7 +2,7 @@ var continents = document.getElementsByClassName("cont");
 
 var cont_content = "<p id='africa'>Continent of the world website is an informational website that teaches users about all of the 7 continents. Users can explore the 7 continents by looking at each continent separately or viewing all continents.";
 
-var zoo_content = "<p id='zoo'>Green Sturgmar Zoo is an animal oasis that specializes in exotic species. These species come from biomes all over the world and are some of the Earth's rarest. There is something for everyone at Green Sturgmar Zoo.";
+var zoo_content = "<p id='exotic'>Catch a random pokemon generates a random pokemon from a custom Pokemon API. After calling the API random pokemon shows the picture of the pokemon and each of the pokemon's types in a pokedex style window.";
 
 var sc_content = "<p id='strength'>Neubauer Strength and Conditioning is crossfit gym specializing in a variety of functional fitness classes. This business offers crossfit classes, olympic lifting classes and regular gymnastics classes to meet their clients many needs.";
 
@@ -36,11 +36,11 @@ document.getElementById("cont-gal").addEventListener('mouseout', function() {
 
 
 document.getElementById("zoo-gal").addEventListener('mouseover', function() {
-    document.getElementById("zoo-gal").src = "images/zoo2.png"
+    document.getElementById("zoo-gal").src = "images/dragonair.png"
 });
 
 document.getElementById("zoo-gal").addEventListener('mouseout', function() {
-    document.getElementById("zoo-gal").src = "images/sturgmar.png"
+    document.getElementById("zoo-gal").src = "images/machamp.png"
 });
 
 
@@ -58,7 +58,7 @@ document.getElementById("family").addEventListener('mouseover', function(){
     document.getElementById("about-title").appendChild(newButton);
     document.getElementById("quinn-button").addEventListener('click', function(){
         document.getElementById("family").src="images/quinn.jpg";
-    })
+    });
 });
 
 
